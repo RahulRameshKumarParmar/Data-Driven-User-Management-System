@@ -37,7 +37,7 @@ const UserForm: React.FC<UserFormProps> = ({ schema, onSave, editData, editIndex
   };
 
   return (
-    <form onSubmit={handleSubmit(submitHandler)} className="space-y-4 p-4 border rounded-[20px] shadow bg-white">
+    <form onSubmit={handleSubmit(submitHandler)} className="space-y-4 p-8 border rounded-[20px] shadow text-black bg-white">
       {schema.fields.map((field: any) => (
         <div key={field.name}>
           <label className="block mb-1 font-medium">{field.label}</label>
@@ -73,7 +73,7 @@ const UserForm: React.FC<UserFormProps> = ({ schema, onSave, editData, editIndex
         </div>
       ))}
 
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+      <button type="submit" className="bg-blue-500 text-white cursor-pointer px-4 py-2 rounded">
         {editData ? "Update User" : "Add User"}
       </button>
     </form>

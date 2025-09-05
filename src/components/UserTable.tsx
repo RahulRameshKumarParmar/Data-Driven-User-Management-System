@@ -16,7 +16,7 @@ const UserTable: React.FC<UserTableProps> = ({ users, schema, onEdit, onDelete }
 
   return (
     <div className="mt-6 overflow-x-auto">
-      <table className="w-full border border-gray-300 rounded-lg overflow-hidden shadow-sm bg-white">
+      <table className="w-full border text-black border-gray-300 rounded-lg overflow-hidden shadow-sm bg-white">
         <thead className="bg-gray-100">
           <tr>
             {tableFields.map((f: any) => (
@@ -38,13 +38,13 @@ const UserTable: React.FC<UserTableProps> = ({ users, schema, onEdit, onDelete }
               <td className="border p-3 text-center space-x-2">
                 <button
                   onClick={() => onEdit(user, i)}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-1 rounded text-sm font-medium"
+                  className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-black px-3 py-1 rounded text-sm font-medium"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => onDelete(i)}
-                  className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm font-medium"
+                  className="bg-red-500 cursor-pointer hover:bg-red-600 text-white px-3 py-1 rounded text-sm font-medium"
                 >
                   Delete
                 </button>
