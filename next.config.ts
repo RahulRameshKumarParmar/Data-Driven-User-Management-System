@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    allowedHosts: true,
-  },
+  // Enable for Replit environment
+  experimental: {},
 };
 
 export default nextConfig;
