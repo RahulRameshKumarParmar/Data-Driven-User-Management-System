@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { generateZodSchema } from "utils/zodSchema";
+import { generateZodSchema } from "../../utils/zodSchema";
 import { z, ZodObject } from "zod";
 
 interface UserFormProps {
