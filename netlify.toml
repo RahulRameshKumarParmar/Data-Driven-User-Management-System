@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# For static export
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
